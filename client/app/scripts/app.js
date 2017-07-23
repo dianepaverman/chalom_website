@@ -40,6 +40,21 @@ angular
         controller: 'HistoryCtrl',
         controllerAs: 'history'
       })
+      .when('/tree', {
+        templateUrl: 'views/tree.html',
+        controller: 'TreeCtrl',
+        controllerAs: 'tree'
+      })
+      .when('/gallery', {
+        templateUrl: 'views/gallery.html',
+        controller: 'GalleryCtrl',
+        controllerAs: 'gallery'
+      })
+      .when('/links', {
+        templateUrl: 'views/links.html',
+        controller: 'LinksCtrl',
+        controllerAs: 'links'
+      })
       .otherwise({
         redirectTo: '/'
       });
