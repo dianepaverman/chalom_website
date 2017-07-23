@@ -31,7 +31,7 @@ Full Guide: http://start.jcolemorrison.com/building-an-angular-and-express-app-p
 26.	Should be getting data from the server, or at least no errors
 
 
-##To set up a new route
+## To set up a new route
 1.	Go to the client folder
 2.	Yo angular:route NameOfRoute
 3.	Check it out at localhost:3000/#/NameOfRoute
