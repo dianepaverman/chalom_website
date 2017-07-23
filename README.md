@@ -1,5 +1,3 @@
-# Starter Project
-
 ## Project Setup
 Full Guide: http://start.jcolemorrison.com/building-an-angular-and-express-app-part-1/
 
@@ -37,3 +35,7 @@ Full Guide: http://start.jcolemorrison.com/building-an-angular-and-express-app-p
 3.	Check it out at localhost:3000/#/NameOfRoute
 4.	Add a corresponding stylesheet: client/app/styles/partials/_NameOfRoute.scss
 5.	Open up main.scss and add @import “partials/signup”;
+
+
+## To Build
+Cd into the client folder and run grunt. This will create a dist folder in the server directory

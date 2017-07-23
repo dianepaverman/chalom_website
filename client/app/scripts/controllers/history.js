@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name clientApp.controller:AboutCtrl
+ * @name clientApp.controller:HistoryCtrl
  * @description
- * # AboutCtrl
+ * # HistoryCtrl
  * Controller of the clientApp
  */
 angular.module('clientApp')
-  .controller('AboutCtrl', function () {
+  .controller('HistoryCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
