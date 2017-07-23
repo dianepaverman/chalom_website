@@ -3,6 +3,9 @@
 @import "variables";
 @import "partials/signup";
 
+@import url("https://fonts.googleapis.com/css?family=Junge");
+@import url("https://fonts.googleapis.com/css?family=Muli:400,300");
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -10,82 +13,110 @@
   padding: 0.2em 0;
 }
 
+
+/** Color Palette **/
+$primary: #DF393B;
+$primary-hover: #942425;
+$black: #000;
+$white: #fff;
+$light-gray: #f9f9f9;
+$gray: #ececec;
+$gray-hover: #dadada;
+
+$default-radius: 0;
+
 body {
-  padding: 0;
+    font-family: 'Muli', sans-serif;
+    font-weight: 100;
+    color: $black;
+    font-size: 15px;
+}
+a {
+    color: $primary;
+    cursor: pointer;
+    &:hover, &:focus, &:active {
+        color: $primary !important;
+        text-decoration: underline;
+    }
+}
+h1 {
+    font-size: 40px;
+    font-family: 'Junge', serif;
+}
+h3{
+    font-weight: 100;
+    font-family: 'Junge', serif;
+}
+h6 {
+    font-family: 'Junge', serif;
+    text-transform: uppercase;
+    font-size:14px;
+    font-weight: 100;
+}
+/*footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: $white;
+    width: 100%;
+    padding:25px;
+}
+.panel {
+    border:none;
+}
+.panel-default>.panel-heading {
+    background: $primary;
+    border: none;
+    color: $white;
+}
+.panel-default>.panel-heading h3{
+    font-size: 24px;
+}
+.panel-default>.panel-heading a {
+    color: $white;
+    &:hover, &:focus, &:active {
+        color: $light-gray !important;
+    }
+}
+*/
+.panel-heading .fa-angle-left {
+    font-size: 45px;
+    padding-top: 4px;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+/** General **/
+img.page-background {
+  background: url("/images/balloons.jpg") no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 0;
+}
+.navbar {
+  z-index: 100;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
 
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
+/** Home **/
+.caption {
+    font-size: 18px;
+    font-family: 'Junge', serif;
+    color: $white;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    text-align: left;
+    opacity: 0.8;
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
 
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-
-  p + h4 {
-    margin-top: 28px;
-  }
-}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
 }
