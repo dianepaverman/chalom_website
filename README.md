@@ -39,3 +39,6 @@ Full Guide: http://start.jcolemorrison.com/building-an-angular-and-express-app-p
 
 ## To Build
 Cd into the client folder and run grunt. This will create a dist folder in the server directory
+
+##Notes
+Add new packages using bower install <package> --save

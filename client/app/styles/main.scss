@@ -1,7 +1,7 @@
 /*$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";*/
 @import './libs/bootstrap';
 @import "variables";
-@import "partials/signup";
+@import "partials/tree";
 
 @import url("https://fonts.googleapis.com/css?family=Junge");
 @import url("https://fonts.googleapis.com/css?family=Muli:400,300");
@@ -26,6 +26,11 @@ $gray-hover: #dadada;
 $default-radius: 0;
 
 body {
+    background: url('/images/balloons.jpg') no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     font-family: 'Muli', sans-serif;
     font-weight: 100;
     color: $black;
@@ -43,7 +48,7 @@ h1 {
     font-size: 40px;
     font-family: 'Junge', serif;
 }
-h3{
+h3 {
     font-weight: 100;
     font-family: 'Junge', serif;
 }
@@ -85,18 +90,7 @@ h6 {
     padding-top: 4px;
 }
 
-/** General **/
-img.page-background {
-  background: url("/images/balloons.jpg") no-repeat top center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  z-index: 0;
-}
+/** Navigation **/
 .navbar {
   z-index: 100;
 }

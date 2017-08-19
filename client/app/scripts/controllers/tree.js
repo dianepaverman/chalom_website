@@ -7,11 +7,11 @@
  * # TreeCtrl
  * Controller of the clientApp
  */
-angular.module('clientApp')
-  .controller('TreeCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+ angular.module('clientApp')
+ .controller('TreeCtrl', function () {
+ 	this.awesomeThings = [
+ 	'HTML5 Boilerplate',
+ 	'AngularJS',
+ 	'Karma'
+ 	];
+});
